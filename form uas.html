@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>EduPortal | Portal Pendidikan Digital</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<div class="contact-form bg-light p-4 rounded">
+  <form id="eduForm">
+    <div class="mb-3">
+      <label for="name" class="form-label">Nama</label>
+      <input type="text" class="form-control" id="name" placeholder="Nama lengkap">
+    </div>
+    <div class="mb-3">
+      <label for="email" class="form-label">Email</label>
+      <input type="email" class="form-control" id="email" placeholder="Email aktif" required>
+    </div>
+    <div class="mb-3">
+      <label for="message" class="form-label">Pesan</label>
+      <textarea class="form-control" id="message" rows="3" placeholder="Tulis pertanyaan atau pesanmu..." required></textarea>
+    </div>
+    <button type="submit" class="btn btn-warning">Tanya & Diskusi</button>
+  </form>
+  <div id="formResult" class="mt-2"></div>
+</div>

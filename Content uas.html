@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>EduPortal | Portal Pendidikan Digital</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body class="bg-light">
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">EduPortal</a>
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div id="navMenu" class="collapse navbar-collapse">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#">Content</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- KATEGORI -->
+<section class="container my-5">
+  <h3 class="fw-bold mb-3">Kategori Populer</h3>
+  <div class="row text-center g-3">
+    <div class="col"> <div class="card p-3 kategori">Pendidikan</div></div>
+    <div class="col"> <div class="card p-3 kategori">Sains</div></div>
+    <div class="col"> <div class="card p-3 kategori">Komputer</div></div>
+    <div class="col"> <div class="card p-3 kategori">Bahasa</div></div>
+    <div class="col"> <div class="card p-3 kategori">Matematika</div></div>
+    <div class="col"> <div class="card p-3 kategori">Bisnis</div></div>
+    <div class="col"> <div class="card p-3 kategori">Propno</div></div>
+  </div>
+</section>
+
+<!-- BERITA -->
+<section class="container my-5">
+  <h3 class="fw-bold mb-3">Berita Pendidikan Terbaru</h3>
+
+  <div class="card mb-3 shadow-sm">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img src="gambar/org.jpeg" class="img-fluid rounded-start" alt="Berita Pendidikan">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">
+            Tips Sukses Belajar Online untuk Mahasiswa</h5>
+        <p>Strategi agar belajar online lebih fokus dan efektif.</p>
+        <button class="btn btn-warning btn-sm">Baca Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 shadow-sm">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img src="gambar/org1.jpeg" class="img-fluid rounded-start" alt="Teknologi Pendidikan">
+      </div>
+      <div class="col-md-8">
+        <div class="card-body">
+        <h5 class="card-title">
+            Pemanfaatan Teknologi Pendidikan di Era Digital</h5>
+        <p>Teknologi sebagai pendukung pembelajaran modern.</p>
+        <button class="btn btn-warning btn-sm">Baca Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card mb-3 shadow-sm">
+    <div class="row g-0 align-items-center">
+      <div class="col-md-4">
+        <img src="gambar/org2.jpeg" class="img-fluid rounded-start" alt="Belajar Coding">
+      </div>
+      <div class="col-md-8">
+        <h5>Kenapa Belajar Coding Penting untuk Masa Depan?</h5>
+        <p>Coding adalah skill utama di era digital.</p>
+        <button class="btn btn-warning btn-sm">Baca Selengkapnya</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FORUM -->
+<section class="container my-5">
+  <h3 class="fw-bold mb-3">Forum Diskusi Mahasiswa</h3>
+  <div class="row g-3">
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d" class="card-img-top">
+        <div class="card-body text-center">Kelas HTML & CSS</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1588072432836-e10032774350" class="card-img-top">
+        <div class="card-body text-center">Dasar Data Science</div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1517433456452-f9633a875f6f" class="card-img-top">
+        <div class="card-body text-center">Belajar Bahasa Dasar</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+    <div>
+    &copy; 2026 | Nailah Khairina Zulfa — 251011700293 — 01SIFP005
+    </div>
+    <div id="timeDisplay" style="margin-top: 8px; font-size: 0.9em; color: #d14b4b;">
+    </div>
+  </footer>
+
+  <script>
+    function updateTime() {
+      const now = new Date();
+      const options = {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false
+      };
+      const timeString = now.toLocaleDateString('id-ID', options);
+      document.getElementById('timeDisplay').innerHTML = `📅 ${timeString}`;
+    }
+    updateTime();
+    setInterval(updateTime, 1000);
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
